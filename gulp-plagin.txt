@@ -1,0 +1,6 @@
+gulp-file-include шаблонизация html
+gulp-htmlmin сжатие разметки
+gulp-size на сколько стльно произошло сжатие
+browser-sync автообновление браузера
+gulp-plumber обработчик ошибок
+gulp-notify всплывающие сообщения для ошибок
