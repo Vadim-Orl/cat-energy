@@ -3,15 +3,13 @@ const browserSync = require("browser-sync").create();
 
 //задачи
 const clear = require("./task/clear.js");
-const html = require("./task/html.js")
+const html = require("./task/html.js");
 
 
 //Наблюдение
 const watcher = () => {
   watch("source/html/**/*.html", html).on("all", browserSync.reload);
 };
-
-
 
 
 //Сервер

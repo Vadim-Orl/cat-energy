@@ -1,5 +1,9 @@
 const {src, dest} = require("gulp");
 
+//Конфигурация
+const path =require("../config/path.js");
+const app =require("../config/app.js");
+
 //Плагины
 const plumber = require("gulp-plumber");
 const notify = require("gulp-notify");
@@ -9,7 +13,7 @@ const size =require("gulp-size");
 
 
 const html = ()=> {
-  return src("source/html/*.html")
+  return src(path.html.src)
   .pipe(plumber({
     errorHandler: notify.onError(error =>({
       title: "HTML",
@@ -18,11 +22,9 @@ const html = ()=> {
   }))
   .pipe(fileInclude())
   .pipe(size({title: "До сжатия"}))
-  .pipe(htmlmin({
-    collapseWhitespace: true
-  }))
+  .pipe(htmlmin(app.htmlmin))
   .pipe(size({title: "после сжатия"}))
-  .pipe(dest("./public"))
+  .pipe(dest(path.html.dest))
 }
 
 module.exports = html;
