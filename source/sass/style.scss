@@ -2,9 +2,9 @@ $base-font-size: 22px;
 
 body {
   font-size: $base-font-size;
-  color: red;
-  background-color: blueviolet;
+  color: rgb(211, 196, 196);
+  background-color: rgb(95, 87, 84);
 }
-p{
-  color:red;
-}
+
+
+@import "block/header.scss";

@@ -14,3 +14,12 @@ gulp-shorthand заменяет все свойства на их краткое
 gulp-group-css-media-queries для обработки медиа выражений
 gulp-sass плагин
 sass компилятор
+gulp-babel @babel/core @babel/preset-env для javascript
+gulp-uglify минифицировать js (-----------------)
+webpack webpack-stream js wather
+gulp-imagemin обработка изображений
+gulp-newer смотрит есть ли изображение если нет добавляет (фильтр)
+gulp-webp оптимальное качество изображения
+gulp-webp-html оборачивает img в использование либо webp либо jpj/..
+gulp-webp-css тоже самое со стилями
+gulp-if использовать ли плагин

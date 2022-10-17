@@ -2,7 +2,7 @@ const pathSrc = "./source";
 const pathDest = "./public";
 
 module.exports = {
-  root: pathDest,
+  root: [pathDest],
 
   html: {
     src: pathSrc + "/html/*.html",
@@ -20,5 +20,17 @@ module.exports = {
     src: pathSrc + "/sass/*.{sass,scss}",
     watch: pathSrc + "/sass/**/*.{sass,scss}",
     dest: pathDest + "/css"
+  },
+
+  js: {
+    src: pathSrc + "/js/*.js",
+    watch: pathSrc + "/js/**/*.js",
+    dest: pathDest + "/js"
+  },
+
+  img: {
+    src: pathSrc + "/img/*.{png,jpg,jpeg,svg}",
+    watch: pathSrc + "/img/**/*.{png,jpg,jpeg,svg}",
+    dest: pathDest + "/img"
   }
 };

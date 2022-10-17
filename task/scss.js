@@ -13,13 +13,14 @@ const rename = require("gulp-rename");
 const shorthand = require("gulp-shorthand");
 const groupCssMediaQueries = require("gulp-group-css-media-queries");
 const sass = require("gulp-sass")(require("sass"));
-
+const webpСss = require("gulp-webp-css");
+const gulpif = require("gulp-if");
 
 
 
 const scss = ()=> {
   console.log("111");
-  return src(path.scss.src, {sourcemaps: true})
+  return src(path.scss.src, {sourcemaps: app.isDev})
     .pipe(plumber({
       errorHandler: notify.onError(error => ({
         title: "SCSS",
@@ -27,13 +28,16 @@ const scss = ()=> {
       }))
     }))
     .pipe(sass())
+    .pipe(gulpif(app.isProd,webpСss()))
     .pipe(autoprefixer())
     .pipe(groupCssMediaQueries())
-    .pipe(dest(path.scss.dest, {sourcemaps: true}))
+    .pipe(gulpif(app.isProd,shorthand()))
+    .pipe(gulpif(app.isProd,csso()))
+    .pipe(dest(path.scss.dest, {sourcemaps: app.isDev}))
     .pipe(rename({suffix: ".min"}))
-    .pipe(shorthand())
-    .pipe(csso())
-    .pipe(dest(path.scss.dest, {sourcemaps: true}));
+    .pipe(gulpif(app.isProd,shorthand()))
+    .pipe(gulpif(app.isProd,csso()))
+    .pipe(gulpif(app.isProd,dest(path.scss.dest, {sourcemaps: app.isDev})));
 
 };
 

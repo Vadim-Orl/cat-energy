@@ -10,6 +10,8 @@ const notify = require("gulp-notify");
 const fileInclude =require("gulp-file-include");
 const htmlmin =require("gulp-htmlmin");
 const size =require("gulp-size");
+const webpHtml =require("gulp-webp-html");
+const gulpif = require("gulp-if");
 
 
 const html = ()=> {
@@ -21,10 +23,11 @@ const html = ()=> {
     }))
   }))
   .pipe(fileInclude())
-  // .pipe(size({title: "До сжатия"}))
-  // .pipe(htmlmin(app.htmlmin))
-  // .pipe(size({title: "после сжатия"}))
-  .pipe(dest(path.html.dest))
-}
+  .pipe(gulpif(app.isProd, webpHtml()))
+  .pipe(gulpif(app.isProd, size({title: "До сжатия"})))
+  .pipe(gulpif(app.isProd, htmlmin(app.htmlmin)))
+  .pipe(gulpif(app.isProd, size({title: "после сжатия"})))
+  .pipe(dest(path.html.dest));
+};
 
 module.exports = html;
