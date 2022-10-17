@@ -5,13 +5,13 @@ const path = require("./config/path.js");
 //задачи
 const clear = require("./task/clear.js");
 const html = require("./task/html.js");
-const css = require("./task/css.js");
+const scss = require("./task/scss.js");
 
 
 //Наблюдение
 const watcher = () => {
   watch(path.html.watch, html).on("all", browserSync.reload);
-  watch(path.css.watch, css).on("all", browserSync.reload);
+  watch(path.scss.watch, scss).on("all", browserSync.reload);
 };
 
 
@@ -29,12 +29,12 @@ const server = ()=> {
 exports.html = html;
 exports.watch= watcher;
 exports.clear= clear;
-exports.css= css;
+exports.scss= scss;
 
 
 //Сборка
 exports.dev = series(
   clear,
-  parallel(css, html),
+  parallel(scss, html),
   parallel(watcher,server)
 );

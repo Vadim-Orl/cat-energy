@@ -26,7 +26,7 @@ const css = ()=> {
         message: error.message
       }))
     }))
-    .pipe(concat("main.css"))
+    .pipe(concat("style.css"))
     .pipe(cssimport())
     .pipe(autoprefixer())
     .pipe(groupCssMediaQueries())

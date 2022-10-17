@@ -18,6 +18,7 @@ const sass = require("gulp-sass")(require("sass"));
 
 
 const scss = ()=> {
+  console.log("111");
   return src(path.scss.src, {sourcemaps: true})
     .pipe(plumber({
       errorHandler: notify.onError(error => ({
@@ -33,6 +34,7 @@ const scss = ()=> {
     .pipe(shorthand())
     .pipe(csso())
     .pipe(dest(path.scss.dest, {sourcemaps: true}));
+
 };
 
 module.exports = scss;
