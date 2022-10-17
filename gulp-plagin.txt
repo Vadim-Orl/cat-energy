@@ -5,3 +5,12 @@ browser-sync автообновление браузера
 gulp-plumber обработчик ошибок
 gulp-notify всплывающие сообщения для ошибок
 del удаление директорий
+gulp-concat объеденение стилей css в один файл
+gulp-cssimport
+gulp-autoprefixer для работы со старыми браузерами
+gulp-csso сжатие css файлов
+gulp-rename scc-min + scc
+gulp-shorthand заменяет все свойства на их краткое обозначение
+gulp-group-css-media-queries для обработки медиа выражений
+gulp-sass плагин
+sass компилятор

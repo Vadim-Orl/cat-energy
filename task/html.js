@@ -21,9 +21,9 @@ const html = ()=> {
     }))
   }))
   .pipe(fileInclude())
-  .pipe(size({title: "До сжатия"}))
-  .pipe(htmlmin(app.htmlmin))
-  .pipe(size({title: "после сжатия"}))
+  // .pipe(size({title: "До сжатия"}))
+  // .pipe(htmlmin(app.htmlmin))
+  // .pipe(size({title: "после сжатия"}))
   .pipe(dest(path.html.dest))
 }
 
