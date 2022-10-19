@@ -1,10 +1,5 @@
-$base-font-size: 22px;
-
-body {
-  font-size: $base-font-size;
-  color: rgb(211, 196, 196);
-  background-color: rgb(95, 87, 84);
+body{
+  width: 100%;
 }
 
-
-@import "block/header.scss";
+@import "block/card-product.scss";

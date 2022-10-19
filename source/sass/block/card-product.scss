@@ -1,0 +1,88 @@
+.catalog__wrapper {
+}
+
+.card-product {
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 280px;
+  height: 218px;
+  padding: 11px 0 18px 20px;
+  border-bottom: black solid 1px;
+}
+.card-product:first-child{
+  border-top: black solid 1px;
+}
+
+.card-product__description {
+  padding-top: 20px;
+
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+.card-product {
+  margin-bottom: 14px;
+}
+
+.card-product__title {
+  display: flex;
+  box-sizing:border-box;
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+
+  margin: 0;
+  padding: 0;
+  width: 76px;
+}
+
+.info-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.info-list__item {
+  display: flex;
+}
+
+.info-list__item-category {
+
+}
+
+.info-list__item-value {
+
+}
+
+.card-poduct__button {
+  flex-grow: 1;
+  background-color:#68B738;
+}
+
+.card-product--all {
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-poduct__button--all {
+  align-self: stretch;
+}
+
+.card-product__linck-img--all {
+  margin-top: 26px;
+  margin-bottom: 23px;
+}
+
+.card-product__title--all {
+  width: 204px;
+  margin-bottom: 8px;
+}
+
+.card-product__info--all {
+  margin-bottom: 21px;
+}
