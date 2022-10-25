@@ -1,3 +1,7 @@
+.catalog__wrapper {
+  margin-bottom: 39px;
+}
+
 
 .catalog__title {
   @include reset;
@@ -15,10 +19,11 @@
 .card-product {
   display: flex;
   flex-wrap: wrap;
+  box-sizing: border-box;
 
   width: 280px;
   min-height: 218px;
-  padding: 11px 20px 14px 20px;
+  padding: 11px 0 14px 0;
   border-bottom: black solid 1px;
 
   color: $special_dark-grey;

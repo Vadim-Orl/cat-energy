@@ -5,8 +5,10 @@
 @import "variables.scss";
 @import "mixins.scss";
 
-@import "block/page-main.scss";
+@import "block/page-body.scss";
+@import "block/main.scss";
 @import "block/header.scss";
+@import "block/footer.scss";
 
 @import "block/card-product.scss";
 
