@@ -1,0 +1,33 @@
+
+ @mixin Oswald--400 {
+  font-family: Oswald;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+@mixin Oswald--500 {
+  font-family: Oswald;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 32px;
+}
+
+@mixin Arial--400 {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin reset {
+  margin: 0;
+  padding: 0;
+}

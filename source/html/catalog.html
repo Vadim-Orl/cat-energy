@@ -13,14 +13,20 @@
       <nav class="main-nav">
         <div class="main-nav__wrapper">
           <button class="main-nav__toggle" type="button">
+            <svg width="24" height="16" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 18" style="enable-background:new 0 0 24 18;" xml:space="preserve">
+              <rect y="16" width="24" height="2"/>
+              <rect y="8" width="24" height="2"/>
+              <rect width="24" height="2"/>
+            </svg>
             <span class="visually-hidden">Открыть меню</span>
           </button>
+
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a>главная</a>
-            </li>
             <li class="site-list__item">
-              <a href="catalog.html">каталог продукции</a>
+              <a href="index.html">главная</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a>каталог продукции</a>
             </li>
             <li class="site-list__item">
               <a href="form.html">подбор программы</a>
@@ -33,12 +39,12 @@
     <main class="page-main">
 
       <section class="catalog">
-        <h2 class="catalog__title">Каталог продукции</h2>
-<div class="catalog__wrapper">
+        <div class="catalog__title">Каталог продукции</div>
+        <div class="catalog__wrapper">
 
           <article class="catalog__product card-product">
             <a class="card-product__linck-img">
-              <img class="card-product__img"  src="img/chicken-small-mobile@1x.jpg" alt="Cat Energy PRO 500 г">
+              <img class="card-product__img"  src="img/chicken-small-mobile@1x.jpg" width="140" height="112" alt="Cat Energy PRO 500 г">
             </a>
 
             <div class="card-product__description">
@@ -95,7 +101,7 @@
 
           <article class="catalog__product card-product">
             <a class="card-product__linck-img">
-              <img class="card-product__img"  src="img\fish-small-mobile@1x.jpg" alt="Cat Energy PRO 500 г">
+              <img class="card-product__img"  src="img\fish-small-mobile@1x.jpg" width="140" height="112" alt="Cat Energy PRO 500 г">
             </a>
 
             <div class="card-product__description">
@@ -123,7 +129,7 @@
 
           <article class="catalog__product card-product">
             <a class="card-product__linck-img">
-              <img class="card-product__img"  src="img\fish-big-mobile@1x.jpg" alt="Cat Energy PRO 1000 г">
+              <img class="card-product__img"  src="img\fish-big-mobile@1x.jpg" width="140" height="112" alt="Cat Energy PRO 1000 г">
             </a>
 
             <div class="card-product__description">
@@ -154,17 +160,17 @@
               <img class="card-product__img" width = 30px height= 30  src="img\icon-plus.svg" alt="Показать все варианты">
             </a>
 
-            <div class="card-product__description">
+            <!-- <div class="card-product__description card-product__description--all"> -->
               <h2 class="card-product__title card-product__title--all">
                 Показать еще 100500 товаров
               </h2>
 
               <p class="card-product__info card-product__info--all">
-                На самом деле вкусов гораздо больше!
+                На самом Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, aperiam?
               </p>
-            </div>
+            <!-- </div> -->
 
-            <button class="card-poduct__button card-poduct__button--all button">Заказать</button>
+            <button class="card-poduct__button card-poduct__button--all button">Показать все</button>
           </article>
         </div>
 
@@ -172,7 +178,7 @@
 
     </main>
 
-    <!-- <footer class="page-footer">
+    <footer class="page-footer">
       <div class="page-footer__wrapper">
         <a href="index.html">
           <img src="img/logo-footer.svg" alt="Cat Energy">
@@ -194,6 +200,6 @@
           <a class="copyright__link" href="">HTML ACADEMY</a>
         </div>
       </div>
-    </footer> -->
+    </footer>
   </body>
 </html>

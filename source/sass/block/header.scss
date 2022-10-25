@@ -1,7 +1,58 @@
-h1{
-  color: azure;
+.page-header{
+
 }
 
-p {
-  color:rgb(38, 255, 0);
+.main-nav {
+
+}
+
+.main-nav__wrapper {
+  position: relative;
+}
+
+.main-nav__toggle {
+  background-color: white;
+  border: none;
+}
+
+.main-nav__list {
+}
+
+.site-list{
+  display: block;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  // justify-content: center;
+  padding: 0;
+  list-style: none;
+}
+
+.site-list__item {
+  font-weight: bold;
+  height: 66px;
+  cursor: pointer;
+  border-bottom: black solid 1px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:first-child {
+    border-top: black solid 1px;
+  }
+}
+
+.site-list__item a{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  width: 100%;
+  height: 100%;
+  color: black;
+  text-decoration: none;
+}
+
+.site-list__item--active {
+
 }

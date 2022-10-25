@@ -1,5 +1,14 @@
-body{
-  width: 100%;
-}
+
+@import "block/normalize.scss";
+
+
+@import "variables.scss";
+@import "mixins.scss";
+
+@import "block/page-main.scss";
+@import "block/header.scss";
 
 @import "block/card-product.scss";
+
+
+

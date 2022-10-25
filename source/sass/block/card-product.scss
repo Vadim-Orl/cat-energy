@@ -1,14 +1,33 @@
-.catalog__wrapper {
+
+.catalog__title {
+  @include reset;
+  @include Oswald--400;
+
+  display: block;
+  box-sizing: border-box;
+  margin: 27px auto 27px 20px;
+
+  font-size: 36px;
+  line-height: 36px;
 }
+
 
 .card-product {
   display: flex;
   flex-wrap: wrap;
 
   width: 280px;
-  height: 218px;
-  padding: 11px 0 18px 20px;
+  min-height: 218px;
+  padding: 11px 20px 14px 20px;
   border-bottom: black solid 1px;
+
+  color: $special_dark-grey;
+
+    &--all {
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 26px;
+    }
 }
 .card-product:first-child{
   border-top: black solid 1px;
@@ -16,73 +35,56 @@
 
 .card-product__description {
   padding-top: 20px;
-
-  font-family: 'Arial';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 16px;
-}
-.card-product {
-  margin-bottom: 14px;
 }
 
 .card-product__title {
-  display: flex;
-  box-sizing:border-box;
-  font-family: 'Oswald';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
+  @include Oswald--400;
+  @include reset;
 
-  margin: 0;
-  padding: 0;
-  width: 76px;
+  width: 78px;
+  margin-bottom: 18px;
+
+    &--all{
+      width: 100%;
+      margin-bottom: 8px;
+      text-align: center;
+    }
+}
+
+.card-product__info {
+  @include Arial--400;
+
+  &--all {
+    margin: 0 auto;
+    margin-bottom: 21px;
+    text-align: center;
+  }
 }
 
 .info-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  @include reset-list;
 }
 
 .info-list__item {
   display: flex;
 }
 
-.info-list__item-category {
-
-}
-
-.info-list__item-value {
-
-}
-
 .card-poduct__button {
   flex-grow: 1;
-  background-color:#68B738;
-}
+  background-color: $basic_green;
+  color: #FFFFFF;
+  border: none;
 
-.card-product--all {
-  flex-direction: column;
-  align-items: center;
-}
+  &--all{
+    align-self: stretch;
+    flex-grow: 0;
 
-.card-poduct__button--all {
-  align-self: stretch;
+    background-color: $basic_grey;
+    color: $special_dark-grey;
+  }
 }
 
 .card-product__linck-img--all {
-  margin-top: 26px;
   margin-bottom: 23px;
 }
 
-.card-product__title--all {
-  width: 204px;
-  margin-bottom: 8px;
-}
-
-.card-product__info--all {
-  margin-bottom: 21px;
-}
