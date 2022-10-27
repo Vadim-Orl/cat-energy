@@ -31,3 +31,7 @@
   margin: 0;
   padding: 0;
 }
+
+@mixin border-help($size, $color) {
+  border: $color solid $size;
+}

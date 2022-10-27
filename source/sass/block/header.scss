@@ -32,14 +32,14 @@
   font-weight: bold;
   height: 66px;
   cursor: pointer;
-  border-bottom: black solid 1px;
+  border-bottom: $special_dark-grey solid 1px;
 
   &:hover {
     opacity: 0.6;
   }
 
   &:first-child {
-    border-top: black solid 1px;
+    border-top: $special_dark-grey solid 1px;
   }
 }
 
