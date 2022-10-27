@@ -1,0 +1,28 @@
+.gift {
+
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items:center;
+
+  width: 280px;
+  height: 290px;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+.gift__img{
+  margin-top: 57px;
+
+}
+
+.gift__text{
+  @include reset;
+  width: 161px;
+  margin-bottom: 49px;
+  color: white;
+}
