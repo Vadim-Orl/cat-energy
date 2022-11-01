@@ -20,4 +20,12 @@
 
 .page-body {
   margin: 0 0 300px 0;
+
+  @media (min-width: $tablet-width){
+    margin: 0 36px;
+  }
+
+  @media (min-width: $desktop-width){
+    margin: 0 120px;
+  }
 }

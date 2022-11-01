@@ -1,79 +1,27 @@
 .page-header{
-  padding: 10px 20px;
-}
-
-.main-nav {
-
-}
-
-.main-nav__wrapper {
   position: relative;
-}
-
-.main-nav__toggle {
-  position: absolute;
-  // display: none;
-  background-color: white;
-  border: none;
-  right: 0;
-  top: -45px;
-}
-
-.main-nav__toggle__open {
-  position: absolute;
-  background-color: white;
-  border: none;
-  right: 0;
-  top: -45px;
-    &::after {
-      content: "";
-      width: 10px;
-      height: 2px;
-      background-color:black;
-    }
-    &::before {
-
-    }
-}
-
-.main-nav__list {
-}
-
-.site-list{
-  display: block;
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
-  // justify-content: center;
-  padding: 0;
-  list-style: none;
-}
-
-.site-list__item {
-  font-weight: bold;
-  height: 66px;
-  cursor: pointer;
-  border-bottom: $special_dark-grey solid 1px;
-
-  &:hover {
-    opacity: 0.6;
-  }
-
-  &:first-child {
-    border-top: $special_dark-grey solid 1px;
+  // padding: 0 20px;
+  // border: 1px solid red;
+  @media (min-width: $tablet-width){
+    display: flex;
   }
 }
 
-.site-list__item a{
-  display: flex;
-  justify-content: center;
-  align-items:center;
-  width: 100%;
-  height: 100%;
-  color: black;
-  text-decoration: none;
-}
+.page-header__logo {
+  height: 38px;
+  text-align: center;
 
-.site-list__item--active {
+    @media (min-width: $tablet-width){
+      // display: block;
+      margin-top: 24px;
+      width: 174px;
+      height: 52px;
+      content: url("../img/logo-tablet.svg");
+    }
 
+    @media (min-width: $desktop-width) {
+      margin-top: 53px;
+      width: 202px;
+      height: 59px;
+    }
 }
