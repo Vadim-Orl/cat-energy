@@ -1,5 +1,5 @@
 .page-header{
-
+  padding: 10px 20px;
 }
 
 .main-nav {
@@ -11,8 +11,29 @@
 }
 
 .main-nav__toggle {
+  position: absolute;
+  // display: none;
   background-color: white;
   border: none;
+  right: 0;
+  top: -45px;
+}
+
+.main-nav__toggle__open {
+  position: absolute;
+  background-color: white;
+  border: none;
+  right: 0;
+  top: -45px;
+    &::after {
+      content: "";
+      width: 10px;
+      height: 2px;
+      background-color:black;
+    }
+    &::before {
+
+    }
 }
 
 .main-nav__list {
