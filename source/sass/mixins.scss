@@ -33,5 +33,6 @@
 }
 
 @mixin border-help($size, $color) {
-  border: $color solid $size;
+  outline: $color solid $size;
+  outline-offset: -5px;
 }
