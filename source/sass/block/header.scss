@@ -20,7 +20,7 @@
 
       width: 50vw;
       height: 696px;
-      top: -120px;
+      top:0;
       left: auto;
       right: -120px;
       z-index: -100;
@@ -41,5 +41,13 @@
   @media (min-width: $tablet-width){
     width: 174px;
     height: 52px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }

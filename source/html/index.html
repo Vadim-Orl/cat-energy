@@ -2,13 +2,13 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
     <header class="page-header">
-      <a class="page-header__logo" href="">
+      <a class="page-header__logo" href="index.html">
 
         <picture>
           <source srcset="img/logo-desktop.svg" media="(min-width: 768px)" />
@@ -52,7 +52,7 @@
           </p>
         </div>
         <picture class="promo_img__wrapper">
-          <source class="promo__img" srcset="img/index-can-tablet@1x.jpg" media="(min-width: 768px)" />
+          <source class="promo__img" srcset="img/index-can-tablet@1x.jpg" media="(min-width: 768px) and (max-width: 1199px)" />
           <source class="promo__img" srcset="img/index-can-desktop@1x.png" media="(min-width: 1200px)" />
           <img class="promo__img" src="img/index-can-mobile@1x.png" width="280" height="270"/>
         </picture>
@@ -65,18 +65,24 @@
         <div class="possibility__wrapper">
           <ul class="possibility__list">
             <li class="possibility__item">
-              <h3 class="possibility__title">похудение</h3>
+              <div class="possibility__title__wrapper">
+                <div class="possibility__title-img possibility__title-img--cat-slim"></div>
+                <h3 class="possibility__title">похудение</h3>
+              </div>
               <p class="possibility__description">
                 Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
               </p>
-              <a class="possibility__button button" href="catalog.html">каталог slim</a>
+              <a class="button possibility__button  " href="catalog.html"><span>каталог slim</span></a>
             </li>
             <li class="possibility__item">
-              <h3 class="possibility__title">набор массы</h3>
+              <div class="possibility__title__wrapper">
+                <div class="possibility__title-img possibility__title-img--cat-pro"></div>
+                <h3 class="possibility__title">набор массы</h3>
+              </div>
               <p class="possibility__description">
                 Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
               </p>
-              <a class="possibility__button button" href="catalog.html">каталог pro</a>
+              <a class="button possibility__button " href="catalog.html"><span>каталог pro</span></a>
             </li>
           </ul>
         </div>
