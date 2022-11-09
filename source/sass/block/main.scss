@@ -24,8 +24,31 @@
 .page-main {
   @include Oswald--400;
 
+
+  // @include border-help(rgb(255, 128, 0), 10px);
 }
 
 .button {
+  display: flex;
   height: 40px;
+  justify-content: center;
+  align-items: center;
+
+  text-decoration: none;
+  color: white;
+  background-color: $basic_green;
+}
+
+.button--green {
+  &:hover {
+    background-color: $basic_green2;
+  }
+
+  &:active {
+    background-color: $basic_green2;
+  }
+
+  &:active span {
+    opacity: 0.3;
+  }
 }

@@ -1,0 +1,103 @@
+.promo {
+  @media (min-width: $tablet-width){
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.promo__wrapper {
+  display: block;
+  padding-top: 27px;
+
+  @media (max-width: $mobile-width-only){
+    width: calc(100% + $margin-mobile * 2);
+    height: 305px;
+    margin-left: -$margin-mobile;
+
+    background-color: #63A73A;
+    background-image: url("../img/index-background-mobile@1x.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+
+    color: white;
+    text-align: center;
+  }
+}
+
+.promo__title {
+  @include reset;
+
+  margin-bottom: 25px;
+  max-width: 50%;
+
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+
+  @media (min-width: $tablet-width){
+    margin-bottom: 41px;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.promo__text {
+  @include reset;
+  font-size: 14px;
+  line-height: 14px;
+  max-width: 40%;
+
+  @media (min-width: $tablet-width){
+    margin-bottom: 49px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.promo_img__wrapper {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 134px;
+
+  @media (min-width: $tablet-width){
+    order: 2;
+    height: 507px;
+  }
+
+  @media (min-width: $desktop-width){
+    height: 185px;
+  }
+}
+
+.promo__img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: -120px;
+
+  @media (min-width: $tablet-width){
+    width: 709px;
+    height: 609px;
+    z-index: -10;
+  }
+
+  @media (min-width: $desktop-width){
+    width: 552px;
+    height: 499px;
+    top: -270px;
+  }
+}
+
+.promo__button {
+  width: 100%;
+
+  @media (min-width: $tablet-width){
+    width: 244px;
+    height: 54px;
+    font-size: 20px;
+  }
+}

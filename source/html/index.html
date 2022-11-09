@@ -10,15 +10,15 @@
     <header class="page-header">
       <a class="page-header__logo" href="">
 
-        <picture class="promo_img__wrapper">
-          <source class="promo__img" srcset="img/logo-desktop.svg" media="(min-width: 768px)" />
-          <source class="promo__img" srcset="img/logo-tablet.svg" media="(min-width: 1200px)" />
+        <picture>
+          <source srcset="img/logo-desktop.svg" media="(min-width: 768px)" />
+          <source srcset="img/logo-tablet.svg" media="(min-width: 1200px)" />
           <img src="img/logo-mobile.svg"  alt="">
         </picture>
 
 
       </a>
-      <nav class="main-nav main-nav--opened">
+      <nav class="main-nav main-nav--closed">
         <div class="main-nav__wrapper">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
@@ -51,13 +51,12 @@
             Занялся собой? Займись котом!
           </p>
         </div>
-            <picture class="promo_img__wrapper">
-              <source class="promo__img" srcset="img/index-can-tablet@1x.jpg" media="(max-width: 1199px)" />
-              <source class="promo__img" srcset="img/index-can-desktop@1x.png" media="(min-width: 1200px)" />
-              <img class="promo__img" src="img/index-can-mobile@1x.png" width="280" height="270"/>
-            </picture>
-          <a class=" promo__button button" href="form.html">Подобрать программу.</a>
-
+        <picture class="promo_img__wrapper">
+          <source class="promo__img" srcset="img/index-can-tablet@1x.jpg" media="(min-width: 768px)" />
+          <source class="promo__img" srcset="img/index-can-desktop@1x.png" media="(min-width: 1200px)" />
+          <img class="promo__img" src="img/index-can-mobile@1x.png" width="280" height="270"/>
+        </picture>
+        <a class=" promo__button button button--green" href="form.html"><span>Подобрать программу.</span></a>
       </section>
 
       <section class="possibility">
