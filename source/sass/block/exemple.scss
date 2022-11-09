@@ -1,0 +1,93 @@
+.page-example {
+  display: block;
+  height: 705px ;
+  background-color: $basic_grey;
+  // margin: 0 -$margin-mobile;
+  margin-left: -$margin-mobile;
+  margin-right: -$margin-mobile;
+  padding: 27px $margin-mobile;
+
+  margin-bottom: 30px;
+}
+
+.example__title {
+  @include reset;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+
+  margin-bottom: 33px;
+}
+
+
+.example__description {
+
+}
+
+.exemple__text {
+  margin-bottom: 25px;
+}
+
+.exemple__list {
+  @include reset-list;
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 51px;
+}
+
+.exemple__item {
+  position: relative;
+}
+
+.exemple__item dd{
+  @include reset;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 124px;
+  height: 54px;
+
+  border: $special_grey solid 1px;
+  box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.exemple__item dt{
+  display: block;
+  position: absolute;
+  @include reset;
+
+  width: 90px;
+  margin: 0 auto;
+  bottom: -12px;
+  left: 0;
+  right: 0;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  background-color: $basic_grey;
+}
+
+.exemple__price {
+  text-align: center;
+}
+
+.example__cat-block {
+
+}
+
+.cat-block__img {
+  text-align: center;
+  margin-bottom: 23px;
+}
+
+
+//--------------------
+
+

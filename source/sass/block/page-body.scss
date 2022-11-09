@@ -24,13 +24,16 @@
 
   margin: 0px $margin-mobile;
 
+
   @media (min-width: $tablet-width){
-    margin: 24px $margin-tablet;
+    margin: 0 $margin-tablet;
   }
 
   @media (min-width: $desktop-width){
-    margin: 53px $margin-desktop;
+    margin: 0 $margin-desktop;
   }
+
+  margin-bottom: 500px;
 }
 
 .a {

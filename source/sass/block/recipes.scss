@@ -19,7 +19,6 @@
 
   @media (min-width: $desktop-width){
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: auto;
   }
 }
 
@@ -41,9 +40,10 @@
 
 .recipes_item span {
   position: absolute;
-  right: 100px;
-  left: auto;
+  right: 0;
+  left: 100px;
   top: 0;
+  margin: 0 auto;
   z-index: -10;
 
   font-weight: 400;
@@ -55,6 +55,7 @@
     opacity: 0;
     position: absolute;
   }
+  
   @media (min-width: $desktop-width){
     right: 0;
   }
