@@ -9,13 +9,14 @@
   @media (min-width: $desktop-width){
     padding-left: 80px;
     padding-top: 111px;
+    margin-bottom: 82px;
   }
   margin-bottom: 20px;
 }
 
 .promo__wrapper {
   display: block;
-
+  // margin-left: -50px;
 
   @media (max-width: $mobile-width-only){
     width: calc(100% + $margin-mobile * 2);
@@ -82,12 +83,12 @@
 
   @media (min-width: $tablet-width){
     order: 2;
-    height: 507px;
+    height: 607px;
+    margin-left: -54px;
   }
 
   @media (min-width: $desktop-width){
-    height: 300px;
-    margin-bottom: 20px;
+    height: 220px;
   }
 }
 
@@ -100,8 +101,10 @@
 
   @media (min-width: $tablet-width){
     width: 709px;
-    height: 609px;
+    height: 709px;
     z-index: -10;
+    // left: 100px;
+    // right: 120px;
   }
 
   @media (min-width: $desktop-width){

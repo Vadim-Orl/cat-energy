@@ -18,6 +18,10 @@
   text-transform: uppercase;
 }
 
+.cat-block__options {
+  position: relative;
+}
+
 .cat-block__switch  input[type="checkbox"]{
   position: absolute;
   opacity: 0;
@@ -29,11 +33,12 @@
   width: 35px;
   height: 6px;
 
-  top: 7px;
-  left: calc(50% - 58px);
+  top: 4px;
+  left:  4px;
   z-index: 5;
   border-radius: 10px;
   background-color: $basic_green;
+
 }
 
 .cat-block__switch input[type="checkbox"]:checked + .checkbox-indicator {
@@ -42,8 +47,8 @@
   width: 35px;
   height: 6px;
 
-  top: 7px;
-  left: calc(50% - 19px);
+  top: 4px;
+  left: 46px;
   z-index: 5;
   border-radius: 10px;
   background-color: $basic_green;
@@ -57,3 +62,10 @@
   background-color: white;
   border-radius: 10px;
 }
+
+.nojs__switch .cat-block__img--after {
+  // display: none;
+}
+
+
+

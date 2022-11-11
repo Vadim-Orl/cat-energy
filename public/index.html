@@ -143,11 +143,11 @@
           <dl class="exemple__list">
             <div class="exemple__item">
               <dd>5 кг</dd>
-              <dt>снижение <br> веса</dt>
+              <dt>снижение веса</dt>
             </div>
             <div class="exemple__item">
               <dd>60 дней</dd>
-              <dt>затрачено <br> времени</dt>
+              <dt>затрачено времени</dt>
             </div>
           </dl>
           <p class="exemple__price">
@@ -155,20 +155,33 @@
           </p>
         </div>
 
-        <label for="#cat__switch">
-          <div class="example__cat-block cat-block__img">
-            <img class="cat-block__img" src="img/before-mobile@1x.png" alt="" width="311" height="232">
-          </div>
-        </label>
+        <div class="example__cat-block cat-block">
 
+          <label for="#cat__switch">
+            <div class="cat-block__img-wrapper nojs__switch">
+               <!-- <img class="cat-block__img--before" src="img/before-mobile@1x.png" alt="" width="311" height="232">
+              <img class="cat-block__img--after" src="img/after-mobile@1x.png" alt="" width="311" height="232">
+              <img class="cat-block__img--before" src="img/before-tablet@1x.png" alt="" width="311" height="232">
+              <img class="cat-block__img--after" src="img/after-tablet@1x.png" alt="" width="311" height="232"> -->
 
-        <label class="cat-block__switch">
-          <span class="cat-block__switch--before">было</span>
-          <input type="checkbox" id="#cat__switch">
-          <span class="checkbox-indicator"></span>
-          <span class="cat-block__switch-line"></span>
-          <span class="cat-block__switch--after">стало</span>
-        </label>
+                <div class="cat-block__img cat-block__img--before"></div>
+
+                <div class="cat-block__img cat-block__img--after cat-block__img--not-active"></div>
+
+             </div>
+          </label>
+
+          <label class="cat-block__switch">
+            <span class="cat-block__switch--before">было</span>
+            <div class="cat-block__options">
+              <input type="checkbox" id="#cat__switch">
+              <span class="checkbox-indicator"></span>
+              <span class="cat-block__switch-line">
+            </div>
+            </span>
+            <span class="cat-block__switch--after">стало</span>
+          </label>
+        </div>
 
       </section>
     </main>
