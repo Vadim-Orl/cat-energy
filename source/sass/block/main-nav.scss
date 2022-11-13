@@ -52,15 +52,21 @@
       @media (min-width: $mobile-width-only){
         border-bottom: $basic_green solid 2px;
       }
-
-      @media (min-width: $desktop-width){
-        border-bottom: white solid 2px;
-      }
     }
-
-
-
 }
+
+
+@media (min-width: $desktop-width){
+  .site-list--index  a {
+    color: white;
+  }
+
+  .site-list--index .site-list__item--active {
+    border-bottom: white solid 2px;
+  }
+}
+
+
 
 .site-list__item a{
   display: flex;
@@ -90,7 +96,6 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
-    color: white;
   }
 
   &:hover {

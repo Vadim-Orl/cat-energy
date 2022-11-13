@@ -14,20 +14,23 @@
   @media (min-width: $desktop-width){
     justify-content: space-between;
 
-    &::before {
-      content: "";
-      position: absolute;
+    &--bg{
+      &::before {
+        content: "";
+        position: absolute;
 
-      width: 50vw;
-      height: 696px;
-      top:0;
-      left: auto;
-      right: -110px;
-      z-index: -100;
-      background-image: url("../img/index-background-desktop@1x.jpg");
-      background-position: top;
-      background-size: cover;
+        width: 50vw;
+        height: 696px;
+        top:0;
+        left: auto;
+        right: -110px;
+        z-index: -100;
+        background-image: url("../img/index-background-desktop@1x.jpg");
+        background-position: top;
+        background-size: cover;
+      }
     }
+
   }
 
 }
