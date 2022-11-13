@@ -39,6 +39,11 @@
   background-color: $basic_green;
 
   text-transform: uppercase;
+  cursor: pointer;
+
+  &:active span {
+    opacity: 0.3;
+  }
 }
 
 .button--green {
