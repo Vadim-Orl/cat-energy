@@ -35,27 +35,26 @@
   align-items: center;
 
   text-decoration: none;
-  color: white;
-  background-color: $basic_green;
+  border: none;
 
   text-transform: uppercase;
   cursor: pointer;
 
-  &:active span {
-    opacity: 0.3;
+  &:active {
+    color: rgba($special_dark-grey, 0.3);
   }
 }
 
 .button--green {
+  background-color: $basic_green;
+  color: white;
+
   &:hover {
     background-color: $basic_green2;
   }
 
   &:active {
     background-color: $basic_green2;
-  }
-
-  &:active span {
-    opacity: 0.3;
+    color: rgba(white, 0.3 );
   }
 }

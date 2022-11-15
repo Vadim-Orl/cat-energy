@@ -1,5 +1,6 @@
 .catalog__wrapper {
-  margin: 0 -$margin-mobile;
+  margin-left: -$margin-mobile;
+  margin-right: -$margin-mobile;
   margin-bottom: 40px;
 
   @media (min-width: $tablet-width){
@@ -7,12 +8,13 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 140px 25px;
     margin: 0;
+    margin-bottom: 40px;
+
   }
 
   @media (min-width: $desktop-width){
     grid-template-columns: repeat(4, 1fr);
     gap: 25px 25px;
-    margin: 0;
   }
 }
 
@@ -75,6 +77,7 @@
       background-color: white;
       border: 2px solid $basic_grey;
       margin-top: 10px;
+      // margin-bottom: 20px;
     }
   }
 }
@@ -196,9 +199,6 @@
   margin-top: auto;
   margin-bottom: 40px;
 
-  background-color: $basic_green;
-  color: #FFFFFF;
-  border: none;
 
   &--all{
     background-color: $basic_grey;
@@ -213,7 +213,7 @@
 .card-product__linck-img--all {
   display: block;
   margin: 23px auto;
-  
+
   @media (min-width: $tablet-width){
     margin: 50px auto;
   }
