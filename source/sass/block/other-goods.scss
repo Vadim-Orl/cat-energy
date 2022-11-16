@@ -23,8 +23,7 @@
 
 .other-goods__title {
   @include reset;
-
-  position: relative;
+  
   display: inline-block;
   margin-bottom: 32px;
   margin-left: -$margin-mobile;
@@ -40,7 +39,7 @@
   }
 }
 
-.other-goods__title + span {
+.span-line {
   @include minus-margin-all;
   position: absolute;
   top:15px;
