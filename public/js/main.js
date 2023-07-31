@@ -15,17 +15,7 @@
   \***************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("const sum = __webpack_require__(/*! ./module/sum.js */ \"./source/js/module/sum.js\");\nconsole.log(sum(1,3));\n\n__webpack_require__(/*! ./module/exemple_switch */ \"./source/js/module/exemple_switch.js\");\n\n//# sourceURL=webpack://cat-energy/./source/js/main.js?");
-
-/***/ }),
-
-/***/ "./source/js/module/exemple_switch.js":
-/*!********************************************!*\
-  !*** ./source/js/module/exemple_switch.js ***!
-  \********************************************/
-/***/ (() => {
-
-eval("document.querySelector('')\n\n//# sourceURL=webpack://cat-energy/./source/js/module/exemple_switch.js?");
+eval("\n__webpack_require__(/*! ./module/sum.js */ \"./source/js/module/sum.js\");\n\nconsole.log('1212');\n\n\n//# sourceURL=webpack://cat-energy/./source/js/main.js?");
 
 /***/ }),
 
