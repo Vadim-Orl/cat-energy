@@ -1,6 +1,5 @@
 .page-example {
   display: block;
-  // min-height: 705px;
   margin-bottom: 30px;
 
   @media (max-width: $mobile-width-only){
@@ -9,7 +8,7 @@
     margin-right: -$margin-mobile;
     padding: 27px $margin-mobile;
   }
-  
+
   @media (min-width: $desktop-width){
     margin-bottom: 0;
   }
