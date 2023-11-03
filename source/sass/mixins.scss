@@ -1,0 +1,69 @@
+
+ @mixin Oswald--400 {
+  font-family: Oswald;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+@mixin Oswald--500 {
+  font-family: Oswald;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 32px;
+}
+
+@mixin Arial--400 {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin reset {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin border-help($size, $color) {
+  outline: $color solid $size;
+  outline-offset: -5px;
+}
+
+@mixin minus-margin-all {
+  @media (max-width: $mobile-width-only){
+    margin-left: -$margin-mobile;
+    margin-right: -$margin-mobile;
+  }
+
+  @media (min-width: $tablet-width){
+    margin-left: -$margin-tablet;
+    margin-right: -$margin-tablet;
+  }
+
+  @media (min-width: $desktop-width){
+    margin-left: -$margin-desktop;
+    margin-right: -$margin-desktop;
+  }
+}
+
+@mixin plus-padding-all {
+  @media (max-width: $mobile-width-only){
+    padding: 0 $margin-mobile ;
+  }
+
+  @media (min-width: $tablet-width){
+    padding: 0 $margin-tablet ;
+  }
+
+  @media (min-width: $desktop-width){
+    padding: 0 $margin-desktop ;
+  }
+}

@@ -1,7 +1,48 @@
-h1{
-  color: azure;
+.page-header {
+  position: relative;
+  display: block;
+  min-height: 66px;
+  padding-top:11px;
+
+  @media (min-width: $tablet-width){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width){
+    justify-content: space-between;
+
+    &--bg{
+      &::before {
+        content: "";
+        position: absolute;
+
+        width: 50vw;
+        height: 696px;
+        top:0;
+        left: auto;
+        right: -110px;
+        z-index: -100;
+        background-image: url("../img/index-background-desktop@1x.jpg");
+        background-position: top;
+        background-size: cover;
+      }
+    }
+
+  }
+
 }
 
-p {
-  color:rgb(38, 255, 0);
+.page-header__logo {
+  display: block;
+  margin-bottom: 20px;
+  width: 225px;
+  height: 38px;
+
+  @media (min-width: $tablet-width){
+    width: 174px;
+    height: 52px;
+  }
 }
